@@ -1,0 +1,19 @@
+@mixin lunch-menu-item(
+$color_primary) {
+
+  .lunch-menu-item {
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    font-size: 14px;
+    color: $color_primary;
+    text-transform: uppercase;
+    outline: none;
+
+    .v-icon {
+      display: block;
+      font-size: 38px;
+    }
+
+  }
+}

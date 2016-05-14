@@ -1,0 +1,15 @@
+@mixin lunch-flat-button {
+  .lunch-flat-button {
+    font-size: 16px;
+    height: 50px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+  }
+
+  .lunch-flat-button:hover {
+    background-color: blue;
+    border-bottom: solid 2px;
+    border-bottom-color: red;
+    cursor: pointer;
+  }
+}

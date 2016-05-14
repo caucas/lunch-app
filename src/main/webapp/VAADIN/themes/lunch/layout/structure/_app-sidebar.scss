@@ -1,0 +1,28 @@
+@import "../../components/menu_item";
+
+@mixin lunch-app-sidebar(
+  $color_background,
+  $color_app_background) {
+
+  #lunch-app-sidebar {
+    background-color: $color_background;
+    height: 100%;
+    width: 120px;
+
+    @include lunch-menu-item;
+
+    .selected {
+      color: $color_background;
+      background-color: $color_app_background;
+
+      .v-icon {
+        color: $color_background;
+      }
+
+    }
+    .v-icon + span {
+      margin-left: 0;
+    }
+
+  }
+}

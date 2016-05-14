@@ -1,0 +1,23 @@
+@import "menu_item";
+@import "title";
+@import "separator";
+@import "flat_button";
+@import "panel";
+@import "textfield";
+
+@mixin lunch-all-components(
+  $color_primary) {
+
+  @include lunch-menu-item(
+  $color_primary);
+
+  @include lunch-title;
+
+  @include lunch-separator;
+
+  @include lunch-flat-button;
+
+  @include lunch-panel;
+
+  @include lunch-textfield;
+}

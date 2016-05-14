@@ -7,6 +7,7 @@ import cc.caucas.lunch.web.vaadin.app.SideBar;
 import cc.caucas.lunch.web.vaadin.app.ViewContainer;
 import cc.caucas.lunch.web.vaadin.common.ViewDetails;
 import cc.caucas.lunch.web.vaadin.common.ViewDetailsProvider;
+import cc.caucas.lunch.web.vaadin.theme.LunchTheme;
 import cc.caucas.lunch.web.vaadin.theme.MenuItem;
 import cc.caucas.lunch.web.vaadin.theme.Separator;
 import cc.caucas.lunch.web.vaadin.theme.Title;
@@ -60,6 +61,8 @@ public class DashboardUI extends UI {
                                 .sorted((o1, o2) -> o1.getOrder() - o2.getOrder())
                                 .map(view -> new MenuItem(view.getViewName(), view.getViewIcon()) {
                                     {
+                                        addStyleName(LunchTheme.StyleName.VERTICAL_ALIGN);
+
                                         eventBus.register(this);
 
                                         addClickListener(event -> getNavigator().navigateTo(view.getNavigation()));

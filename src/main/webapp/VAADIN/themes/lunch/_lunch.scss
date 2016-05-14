@@ -1,11 +1,25 @@
-//noinspection CssUnknownTarget
-@import "../valo/valo";
+@import "dependecies/all_dependencies";
+@import "layout/structure/all_structure";
+@import "components/all_componenets";
+@import "commons/all-commons";
 
-@mixin lunch($font-family) {
+@mixin lunch(
+  $color_background,
+  $color_appbar-background,
+  $color_sidebar-background,
+  $font_family) {
 
-  $v-font-family: $font-family;
-  $v-app-background-color: #ffffff;
+  @include lunch-all-commons;
 
-  @include valo;
+  @include lunch-all-dependencies(
+  $color_background, $font_family);
+
+  @include lunch-all-structure(
+  $color_background,
+  $color_appbar-background,
+  $color_sidebar-background);
+
+  @include lunch-all-components(
+  $color_background);
 
 }

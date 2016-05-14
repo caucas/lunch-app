@@ -1,0 +1,19 @@
+@import "app-bar";
+@import "app-content";
+@import "app-sidebar";
+
+@mixin lunch-all-structure(
+  $color_app-background,
+  $color_appbar-background,
+  $color_sidebar-background) {
+
+  @include lunch-app-bar(
+  $color_appbar-background);
+
+  @include lunch-app-content;
+
+  @include lunch-app-sidebar(
+  $color_sidebar-background,
+  $color_app-background);
+
+}

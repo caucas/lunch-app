@@ -1,0 +1,10 @@
+@import "vaadin";
+
+@mixin lunch-all-dependencies(
+  $font_font-family,
+  $color_app-background) {
+
+  @include lunch-vaadin(
+      $font_font-family,
+      $color_app-background);
+}

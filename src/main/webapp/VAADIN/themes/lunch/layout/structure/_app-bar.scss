@@ -1,0 +1,12 @@
+@import "../../commons/va-middle";
+
+@mixin lunch-app-bar($color_background) {
+  #lunch-app-bar {
+    background-color: $color_background;
+    height: 50px;
+    width: 100%;
+    text-align: right;
+    padding: 0 10px 0 10px;
+  }
+
+}

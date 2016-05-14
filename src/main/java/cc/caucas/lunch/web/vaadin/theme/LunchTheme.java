@@ -14,5 +14,9 @@ public class LunchTheme {
         public static final String TITLE = "lunch-title";
         public static final String SEPARATOR = "lunch-separator";
         public static final String MENU_ITEM = "lunch-menu-item";
+        public static final String VERTICAL_ALIGN = "va-middle";
+        public static final String FLAT_BUTTON = "lunch-flat-button";
+        public static final String PANEL = "lunch-panel";
+        public static final String TEXT_FIELD = "lunch-textfield";
     }
 }

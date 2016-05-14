@@ -1,0 +1,10 @@
+//noinspection CssUnknownTarget
+@import "../../valo/valo";
+
+@mixin lunch-vaadin($color_app-background, $font_font-family) {
+  $v-app-background-color: $color_app-background;
+  $v-font-family: $font_font-family;
+
+
+  @include valo;
+}
