@@ -1,5 +1,4 @@
-/lunch.iml
-/.mvn
+*.iml
 /.idea
 /target
 *.cache
